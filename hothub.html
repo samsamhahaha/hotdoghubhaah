@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOTHUB</title>
+
+  <!-- Google Fonts: Inter for minimal look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global Reset + Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #fff7f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #ff4d4d, #ff914d);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    header a {
+      text-decoration: none;
+      background: white;
+      color: #ff4d4d;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #ffe0d0;
+    }
+
+    /* Menu Section */
+    section {
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    /* Menu Grid */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    @media (max-width: 900px) {
+      .menu {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .menu {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Card Styles */
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+
+    /* Uniform Image Wrapper */
+    .card img {
+      width: 100%;
+      height: 220px;           /* Universal height */
+      object-fit: cover;        /* Crop images consistently */
+      border-radius: 12px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+
+    .card button {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .card button:hover {
+      background: #e63939;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>HOTHUB</h1>
+    <p>Fast • Tasty • Delivered Hot</p>
+    <a href="#menu">View Menu</a>
+  </header>
+
+  <!-- MENU -->
+  <section id="menu">
+    <h2>Our Hotdogs</h2>
+
+    <div class="menu">
+      <div class="card">
+        <img src="classic.jpg" alt="Classic Hotdog">
+        <h3>Classic Hotdog</h3>
+        <p>Meh</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="cheesy1.png" alt="Cheesy Hotdog">
+        <h3>Cheesy Hotdog</h3>
+        <p>Cheesy cheeseeeeeeee</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="chili.jpg" alt="Chili Hotdog">
+        <h3>Chili Hotdog</h3>
+        <p>Spicyyyyyyyy Hotdog :p</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="bacon.png" alt="Bacon Hotdog">
+        <h3>Bacon Hotdog</h3>
+        <p>Crispyyyyy bacon wrapped goodness</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="bbq.avif" alt="BBQ Hotdog">
+        <h3>BBQ Hotdog</h3>
+        <p>ohoooo Smoky Hotdog </p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="custom1.jpg" alt="Custom Hotdog">
+        <h3>Freedom Hotdog</h3>
+        <p>PUT ANY TOPPINGS YOU WANT!</p>
+        <button>Order Now</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
